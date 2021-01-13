@@ -1,0 +1,86 @@
+// .siteLayout .siteLayoutBackgroundHeader {
+//   background: #fff;
+// }
+.topNavBar {
+  .active {
+    a {
+      color: #00a29d !important;
+    }
+    margin-bottom: -10px;
+    border-bottom: 2px solid #00a29d;
+  }
+}
+
+.siteLayoutDiv {
+  @media only screen and (max-width: 600px) {
+    padding: 0px !important;
+  }
+}
+
+.fullHeight {
+  height: auto;
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logo {
+  width: 120px;
+  height: 31px;
+  // background: rgba(255, 255, 255, 0.2);
+  margin-left: 10px;
+  float: left;
+  .smallLogo {
+    width: 50px;
+    height: 40px;
+  }
+  .Biglogo {
+    // width: 65%;
+    height: 40px;
+  }
+}
+.logoContainer {
+  float: right;
+  .userLogo {
+    background: #00a29d;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    svg {
+      color: #fff;
+    }
+  }
+}
+
+.siteLayoutBackgroundHeader {
+  // background: #2e2c36;
+  color: #fff;
+  // ul {
+  //   float: right;
+  // }
+  // :global {
+  //   .ant-menu-item a {
+  //     color: #fff;
+  //   }
+  //   .ant-menu-item-active a {
+  //     color: #fff;
+  //   }
+  //   .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  //     background: #00a29d;
+  //     color: #fff;
+  //   }
+  // }
+}

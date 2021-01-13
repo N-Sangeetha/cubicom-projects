@@ -1,0 +1,218 @@
+h4 {
+  font-size: 15px;
+}
+// p {
+//   // font-size: 15px;
+// }
+.heads {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.logoBoxes {
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    div {
+      margin: 0 10px;
+    }
+  }
+}
+
+.logoBox {
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  width: 120px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.logoBox2 {
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  width: 140px;
+  padding: 20px 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  img {
+    // height: 50%;
+    // width: 100%;
+    width: 75px;
+  }
+}
+
+.container {
+  background: #fff;
+  border-radius: 7px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  .logoContainer {
+    padding: 20px 0px;
+    height: 70vh;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 2px;
+      height: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #ddd;
+    }
+
+    /* scrollbar handle */
+    &::-webkit-scrollbar-thumb {
+      background-color: #8e8e8e;
+    }
+
+    @media only screen and (max-width: 600px) {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      height: auto;
+      // max-width: 300px;
+    }
+  }
+
+  .formBox {
+    .formContainer {
+      width: 558px;
+      margin-left: 25px;
+      padding-top: 20px;
+      .row {
+        margin-top: 20px;
+        .formComponent {
+          width: 255px;
+          align-items: center;
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+.actions {
+  width: 80%;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.textPrimary {
+  color: #00a29d;
+}
+
+.heading {
+  text-align: center;
+  font-size: 20px;
+}
+
+.AddBtn {
+  margin-left: 160px;
+  margin-bottom: -10px;
+  cursor: pointer;
+}
+.dateContainer {
+  margin: 20px;
+  @media only screen and (max-width: 600px) {
+    margin: 20px 0;
+  }
+  .datePicker {
+    max-width: 610px;
+    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: 64px 64px 64px 64px 64px 64px 64px 64px;
+    column-gap: 10px;
+    &::-webkit-scrollbar {
+      width: 2px;
+      height: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #00a29d;
+    }
+
+    /* scrollbar handle */
+    &::-webkit-scrollbar-thumb {
+      background-color: #8e8e8e;
+    }
+    div {
+      margin: 0 5px;
+      border: 1.4px solid #00a29d;
+      min-width: 67px;
+      border-radius: 5px 5px 0 0;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      p {
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        &:nth-child(2) {
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+      &:last-child {
+        p {
+          line-height: 70px;
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .active {
+      background: #00a29d;
+      color: #fff;
+    }
+  }
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  column-gap: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 350px;
+  height: 70px;
+  margin-bottom: 50px;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    width: 250px;
+  }
+  div {
+    p {
+      padding: 0;
+      margin: 0;
+      span {
+        font-size: 1.1rem;
+      }
+    }
+    .logo {
+      padding: 10px 14px;
+      background: #00a29d;
+      font-size: 16px;
+      color: #fff;
+      border-radius: 50%;
+      margin-left: 20px;
+    }
+  }
+}
+
+.calenderHead {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  width: 350px;
+  justify-content: center;
+  @media only screen and (max-width: 600px) {
+    width: 250px;
+  }
+  .heading {
+    font-size: 15px;
+  }
+}
