@@ -1,0 +1,27 @@
+.footer {
+  background: #2c2c2c;
+  color: #ffffff;
+  padding: 0 30px;
+  padding-bottom: 10px;
+  padding-top: 40px;
+  // margin-top: 50px;
+  ul {
+    list-style-type: none;
+    li {
+      padding-bottom: 10px;
+    }
+  }
+  .customInput {
+    border-radius: 25px;
+    width: 344px;
+    height: 43px;
+    background: #707070;
+    border: none;
+    padding: 0 20px;
+    :global {
+      .ant-input {
+        background: #707070;
+      }
+    }
+  }
+}
